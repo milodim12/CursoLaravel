@@ -23,5 +23,8 @@ else{
 public function postRegistrar($tipo){
 
 }
+public function getEditar($tipo){
+
+}
 }
 ?>
