@@ -64,95 +64,48 @@
             </div>
             <div class="row">
                 <div class="col-sm-3">
-                    
-<div class="[ container text-center ]">
-    <div class="[ row ]">
-        <div class="[ col-xs-12 ]" style="padding-bottom: 30px;">
-            <p>This is my attempt to make a wonderful snippet posted by <a target="_blank" href="http://www.bootsnipp.com/maridlcrmn">maridlcrmn</a> a little more responsive. You can find the orginal <a target="_parent" href="http://bootsnipp.com/maridlcrmn/snippets/QbEpr">here</a></p>
-        </div>
-    </div>
-</div>
-<div class="[ container text-center ]">
-	<div class="[ row ]">
-		<div class="[ col-xs-12 col-sm-8 col-sm-offset-2 col-md-6 col-md-offset-3 ]" role="tabpanel">
-            <div class="[ col-xs-4 col-sm-12 ]">
-                <!-- Nav tabs -->
-                <ul class="[ nav nav-justified ]" id="nav-tabs" role="tablist">
-                    <li role="presentation" class="active">
-                        <a href="#dustin" aria-controls="dustin" role="tab" data-toggle="tab">
-                            <img class="img-circle" src="https://s3.amazonaws.com/uifaces/faces/twitter/dustinlamont/128.jpg" />
-                            <span class="quote"><i class="fa fa-quote-left"></i></span>
-                        </a>
-                    </li>
-                    <li role="presentation" class="">
-                        <a href="#daksh" aria-controls="daksh" role="tab" data-toggle="tab">
-                            <img class="img-circle" src="https://s3.amazonaws.com/uifaces/faces/twitter/dakshbhagya/128.jpg" />
-                            <span class="quote"><i class="fa fa-quote-left"></i></span>
-                        </a>
-                    </li>
-                    <li role="presentation" class="">
-                        <a href="#anna" aria-controls="anna" role="tab" data-toggle="tab">
-                            <img class="img-circle" src="https://s3.amazonaws.com/uifaces/faces/twitter/annapickard/128.jpg" />
-                            <span class="quote"><i class="fa fa-quote-left"></i></span>
-                        </a>
-                    </li>
-                    <li role="presentation" class="">
-                        <a href="#wafer" aria-controls="wafer" role="tab" data-toggle="tab">
-                            <img class="img-circle" src="https://s3.amazonaws.com/uifaces/faces/twitter/waferbaby/128.jpg" />
-                            <span class="quote"><i class="fa fa-quote-left"></i></span>
-                        </a>
-                    </li>
-                </ul>
-            </div>
-            <div class="[ col-xs-8 col-sm-12 ]">
-                <!-- Tab panes -->
-                <div class="tab-content" id="tabs-collapse">            
-                    <div role="tabpanel" class="tab-pane fade in active" id="dustin">
-                        <div class="tab-inner">                    
-                            <p class="lead">Etiam tincidunt enim et pretium efficitur. Donec auctor leo sollicitudin eros iaculis sollicitudin.</p>
-                            <hr>
-                            <p><strong class="text-uppercase">Dustin Lamont</strong></p>
-                            <p><em class="text-capitalize"> Senior web developer</em> at <a href="#">Apple</a></p>                 
-                        </div>
-                    </div>
-                    
-                    <div role="tabpanel" class="tab-pane fade" id="daksh">
-                        <div class="tab-inner">
-                            <p class="lead">Suspendisse dictum gravida est, nec consequat tortor venenatis a. Suspendisse vitae venenatis sapien.</p>
-                            <hr>
-                            <p><strong class="text-uppercase">Daksh Bhagya</strong></p>
-                            <p><em class="text-capitalize"> UX designer</em> at <a href="#">Google</a></p>
-                        </div>
-                    </div>
-                    
-                    <div role="tabpanel" class="tab-pane fade" id="anna">
-                        <div class="tab-inner">
-                            <p class="lead">Nullam suscipit ante ac arcu placerat, nec sagittis quam volutpat. Vestibulum aliquam facilisis velit ut ultrices.</p>
-                            <hr>
-                            <p><strong class="text-uppercase">Anna Pickard</strong></p>
-                            <p><em class="text-capitalize"> Master web developer</em> at <a href="#">Intel</a></p>
-                        </div> 
-                    </div>
-                    
-                    <div role="tabpanel" class="tab-pane fade" id="wafer">
-                        <div class="tab-inner">
-                            <p class="lead"> Fusce erat libero, fermentum quis sollicitudin id, venenatis nec felis. Morbi sollicitudin gravida finibus.</p>
-                            <hr>
-                            <p><strong class="text-uppercase">Wafer Baby</strong></p>
-                            <p><em class="text-capitalize"> Web designer</em> at <a href="#">Microsoft</a></p>
-                        </div>
-                    </div>
-                </div>
-            </div>        
-        </div>
-	</div>
-</div>
+                    B
                 </div>
                 <div class="col-sm-9">
                     <div class="row">
                         <div class="col-sm-5 col-sm-offset-1">
                             <div class="row">
-                                C
+                                <div class="login-body">
+    <article class="container-login center-block">
+		<section>
+			<ul id="top-bar" class="nav nav-tabs nav-justified">
+				<li class="active"><a href="#login-access">Accesso</a></li>
+				<li><a href="#">Password dimenticata</a></li>
+			</ul>
+			<div class="tab-content tabs-login col-lg-12 col-md-12 col-sm-12 cols-xs-12">
+				<div id="login-access" class="tab-pane fade active in">
+					<h2><i class="glyphicon glyphicon-log-in"></i> Accesso</h2>						
+					<form method="post" accept-charset="utf-8" autocomplete="off" role="form" class="form-horizontal">
+						<div class="form-group ">
+							<label for="login" class="sr-only">Email</label>
+								<input type="text" class="form-control" name="login" id="login_value" 
+									placeholder="Email" tabindex="1" value="" />
+						</div>
+						<div class="form-group ">
+							<label for="password" class="sr-only">Password</label>
+								<input type="password" class="form-control" name="password" id="password"
+									placeholder="Password" value="" tabindex="2" />
+						</div>
+						<div class="checkbox">
+								<label class="control-label" for="remember_me">
+									<input type="checkbox" name="remember_me" id="remember_me" value="1" class="" tabindex="3" /> Ricordami
+								</label>
+						</div>
+						<br/>
+						<div class="form-group ">				
+								<button type="submit" name="log-me-in" id="submit" tabindex="5" class="btn btn-lg btn-primary">Entra</button>
+						</div>
+					</form>			
+				</div>
+			</div>
+		</section>
+	</article>
+</div>
                             </div>
                             <div class="row">
                                 D
