@@ -4,6 +4,9 @@
         <title>Bienvenido a mi pagina web</title>  
         <!-- Latest compiled and minified CSS -->
         <link rel="stylesheet" href="../../public/assets/libs/bootstrap-3.3.2-dist/css/bootstrap.min.css">
+        <link rel="stylesheet" href="../../../public/assets/css/style.css" type="text/css">
+        
+        <meta http-equiv="Refresh" content="30">
     </head>
     <body>
         <div class="container">

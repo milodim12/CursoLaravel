@@ -23,3 +23,4 @@ Route::get('/prueba', function()
 
 Route::controller('personal',  'PersonalController');
 Route::controller('clase2',  'Clase2Controller');
+Route::controller('prueba','PruebaController');
