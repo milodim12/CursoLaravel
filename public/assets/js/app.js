@@ -43,7 +43,12 @@ managerScreen={
     });
 
 
+    },
+    Calendario:function(){
+$('.datepicker').pickadate();
+    },
+    Fecha:function(){
+$('.timepicker').pickatime();
     }
-    
 }
 var ms=managerScreen;
