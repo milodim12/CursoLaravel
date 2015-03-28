@@ -20,6 +20,10 @@ Route::get('/prueba', function()
 {
 	return View::make('ejemplo');
 });
+Route::get('/camiloun', function()
+{
+	return View::make('perfil/perfil')->with("nombre","Camilo")->with("edad","22");
+});
 
 Route::controller('personal',  'PersonalController');
 Route::controller('clase2',  'Clase2Controller');
