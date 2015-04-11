@@ -1,0 +1,15 @@
+/* 
+    Document   : fb.css
+    Created on : 1/04/2015, 10:55:05 AM
+    Author     : HP
+    Description:
+        Purpose of the stylesheet follows.
+*/
+
+.divpropio { 
+    width:1px; 
+    height:20px; 
+    background-color:#000066; 
+    margin-top: 15px;
+}
+
