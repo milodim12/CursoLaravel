@@ -22,27 +22,24 @@ Route::get('/prueba', function()
 });
 Route::get('/camiloun',array('before'=>'auth', function()
 {
-	return View::make('perfil/perfil')->with("nombre",Auth::user()->nombre)->with("edad","22");
+    $publicaciones=Publicacion::orderBy('id', 'des')->get();
+    return View::make('perfil/perfil')->with("nombre",Auth::user()->nombre)
+                                      ->with("edad","22")
+                                      ->with("publicaciones",$publicaciones);
 }));
 Route::get('/version', function()
 {       $laravel = app();
         $version = $laravel::VERSION;
 	return View::make('ejemplo4')->with("version",$version);
 });
-Route::get('/login', function()
-{      
-        if(Auth::check()){
-	return Redirect::to("/camiloun");
-        }
-   
+Route::get('/login',array('before'=>'guest' ,function()
+{
         return View::make('general/login');
         
-});
+}));
 Route::post('/loguear', function(){
     $email=Input::get('correo');
     $password=Input::get('password');
-    echo $email;
-    echo $password;
         if (Auth::attempt(['correo' => $email, 'password' => $password]))
         {
             return Redirect::to("/camiloun");
@@ -61,3 +58,4 @@ Route::get('/logout', function()
 Route::controller('personal',  'PersonalController');
 Route::controller('clase2',  'Clase2Controller');
 Route::controller('prueba','PruebaController');
+Route::controller('publicacion','PublicacionController');

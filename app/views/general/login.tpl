@@ -34,7 +34,7 @@
 body, html {
     height: 100%;
     background-repeat: no-repeat;
-    background-image: linear-gradient(rgb(104, 145, 162), rgb(12, 97, 33));
+    background-color: #3b5998;
 }
 
 .card-container.card {
@@ -76,7 +76,7 @@ body, html {
     display: block;
     -moz-border-radius: 50%;
     -webkit-border-radius: 50%;
-    border-radius: 50%;
+    border-radius: 10%;
 }
 
 /*
@@ -135,7 +135,7 @@ body, html {
 
 .btn-signin {
     /*background-color: #4d90fe; */
-    background-color: rgb(104, 145, 162);
+    background-color: #3b5998;
     /* background-color: linear-gradient(rgb(104, 145, 162), rgb(12, 97, 33));*/
     padding: 0px;
     font-weight: 700;
@@ -154,11 +154,11 @@ body, html {
 .btn-signin:hover,
 .btn-signin:active,
 .btn-signin:focus {
-    background-color: rgb(12, 97, 33);
+    
 }
 
 .forgot-password {
-    color: rgb(104, 145, 162);
+    color: #3b5998;
 }
 
 .forgot-password:hover,

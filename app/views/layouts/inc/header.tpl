@@ -35,11 +35,10 @@
             <li><a href="#">Registro de actividad</a></li>
             <li><a href="#">Preferencias de noticias</a></li>
             <li><a href="#">Configuración</a></li>
-            <li><a href="{url('/logout')}">Salir</a></li>
             <li class="divider"></li>
             <li><a href="#">Ayuda</a></li>
             <li><a href="#">Reportar un problema</a></li>
-            <li><a  href="#"><span class="glyphicon glyphicon-off" aria-hidden="true"></span> Salir</a></li>
+            <li><a  href="{url('/logout')}"><span class="glyphicon glyphicon-off" aria-hidden="true"></span> Salir</a></li>
           </ul>
         </li>
       </ul>
