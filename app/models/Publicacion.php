@@ -12,9 +12,10 @@
  */
 class Publicacion extends Eloquent{
     protected $table='publicacion';
+    public $timestamps = true;
     
     public function getDateFormat(){
-    return 'Y-m-d';
+    return 'U';
     }
 }
 

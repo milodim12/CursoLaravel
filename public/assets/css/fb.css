@@ -12,4 +12,19 @@
     background-color:#000066; 
     margin-top: 15px;
 }
-
+#portada{
+    margin-top: -5%;
+}
+#foto_perfil{
+    margin-top: -80%;
+    margin-left: 30%;
+    border: 4px solid #ffffff;
+    border-radius: 3px;
+    position: relative;
+    z-index: 2;
+}
+#barra_portada{
+    margin-top: -3%;
+    position:relative;
+    z-index: 1;
+}

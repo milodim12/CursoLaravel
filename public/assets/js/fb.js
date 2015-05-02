@@ -8,6 +8,16 @@ managerScreen={
        $("#btnPublicar").css("display", "block");
        
    },
+    typeahead:function(){
+    alert("oe");
+    $('#dt1').typeahead({
+    source: {
+        data: [
+           "Zambia", "Zimbabwe"
+        ]
+    }
+    });
+    },
    comentar:function(id){
        var comentario=$("#comentario-"+id);
        if(comentario.val()!=""){

@@ -1,8 +1,10 @@
 {capture assign="left"}
     <br>
-    <p><center><img src="https://scontent.xx.fbcdn.net/hphotos-xpa1/v/t1.0-9/10365956_10204816016858227_1172762318500324956_n.jpg?oh=5db549d718fb8c4347c892cd175a0003&oe=55AD067B" width="150" height="150"></center></p>
+    <p><center><img id="foto_perfil" src="{url("/assets/img/profile")}/{$foto}" width="150" height="150"></center></p>
     <div class="well">
         <center><div class="glyphicon glyphicon-lock" aria-hidden="true"> Trabaja en Facebook</div></center>
+        <center><div class="glyphicon glyphicon-lock" aria-hidden="true"> Nombre: {$nombre}</div></center>
+        <center><div class="glyphicon glyphicon-lock" aria-hidden="true"> Correo: {$usuarios}</div></center>
         <br><center><div class="glyphicon glyphicon-education" aria-hidden="true"> Estudia Ingeniería de Sistemas</div></center>
         <br><center><div class="glyphicon glyphicon-home" aria-hidden="true"> Vive en Medellín</div></center>
     </div>
@@ -43,6 +45,7 @@
     {/foreach}    
 {/capture}
 {capture assign="portada"}
-    <p><center><img src="http://gentepasionyfutbol.com.co/wp-content/uploads/2015/01/Medell%C3%ADn-2015-1.jpg" width="830" height="500"></center></p>
+    <p><center><img id="portada" src="http://gentepasionyfutbol.com.co/wp-content/uploads/2015/01/Medell%C3%ADn-2015-1.jpg"</center></p>
+    <div id="barra_portada" class="well"></div>
 {/capture}
 {include file="../masterpage/template.tpl" layout="two_columns"}

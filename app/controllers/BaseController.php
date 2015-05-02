@@ -14,5 +14,9 @@ class BaseController extends Controller {
 			$this->layout = View::make($this->layout);
 		}
 	}
-
+        public function missingMethod($parameters = array())
+        {
+    //
+        return Redirect::to("/");
+        }
 }

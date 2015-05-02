@@ -12,7 +12,7 @@
       </ul>
       <form class="navbar-form navbar-left" role="search">
           <div class="form-group">
-            <input type="text" class="form-control" placeholder="Buscar personas, lugares y cosas">
+              <input onselect="typeahead();" id="dt1" type="text" data-provide="typeahead" data-source='[{$usuarios}]' class="form-control" placeholder="Buscar personas, lugares y cosas">
         </div>
       </form>
       <ul class="nav navbar-nav navbar-right">
@@ -38,10 +38,11 @@
             <li class="divider"></li>
             <li><a href="#">Ayuda</a></li>
             <li><a href="#">Reportar un problema</a></li>
-            <li><a  href="{url('/logout')}"><span class="glyphicon glyphicon-off" aria-hidden="true"></span> Salir</a></li>
+            <li><a  href="{url('profile/logout')}"><span class="glyphicon glyphicon-off" aria-hidden="true"></span> Salir</a></li>
           </ul>
         </li>
       </ul>
     </div><!-- /.navbar-collapse -->
   </div><!-- /.container-fluid -->
 </nav>
+      
