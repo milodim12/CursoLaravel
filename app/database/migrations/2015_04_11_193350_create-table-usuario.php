@@ -30,8 +30,10 @@ class CreateTableUsuario extends Migration {
                     $table->boolean('tipo');
                     $table->integer('id_padre')->unsigned()->nullable();
                     $table->integer('id_usuario')->unsigned();
+                    $table->integer('receptor')->unsigned();
                     $table->timestamps();
                     $table->foreign('id_usuario')->references('id')->on('usuario');
+                    $table->foreign('receptor')->references('id')->on('usuario');
                     $table->foreign('id_padre')->references('id')->on('publicacion');
 		});
                 Schema::create('me_gusta', function(Blueprint $table)
@@ -50,7 +52,33 @@ class CreateTableUsuario extends Migration {
                     'correo'=>'jcamilo8a01@hotmail.com',
                     'password'=>Hash::make('123')
                 ]);
+        DB::table('usuario')
+                ->insert([
+                    'nombre'=>'Mateo',
+                    'correo'=>'maddelgado@hotmail.com',
+                    'password'=>Hash::make('123')
+                ]);
+        DB::table('usuario')
+                ->insert([
+                    'nombre'=>'simon',
+                    'correo'=>'saimon002@hotmail.com',
+                    'password'=>Hash::make('123')
+                ]);
+        DB::table('usuario')
+                ->insert([
+                    'nombre'=>'simon',
+                    'correo'=>'saimon002@hotmail.com',
+                    'password'=>Hash::make('123')
+                ]);
+        DB::table('usuario')
+                ->insert([
+                    'nombre'=>'simon',
+                    'correo'=>'saimon002@hotmail.com',
+                    'password'=>Hash::make('123')
+                ]);
+
 	}
+        
 
 	/**
 	 * Reverse the migrations.

@@ -10,13 +10,15 @@
       <ul class="nav navbar-nav">
        
       </ul>
-      <form class="navbar-form navbar-left" role="search">
+      <form action="{url('profile/buscar')}" method="post" class="navbar-form navbar-left" role="search">
           <div class="form-group">
-              <input onselect="typeahead();" id="dt1" type="text" data-provide="typeahead" data-source='[{$usuarios}]' class="form-control" placeholder="Buscar personas, lugares y cosas">
-        </div>
+              <input type="hidden" value='[{$usuarios}]' id="dt2" name="id">
+              <input name="nombre" data-lo-que-sea="hola" id="dt1" type="text"  data-provide="typeahead" class="form-control" placeholder="Buscar personas, lugares y cosas">
+              
+          </div>
       </form>
       <ul class="nav navbar-nav navbar-right">
-        <li><a style="color:#FFFFFF" href="#">{$nombre}</a></li>
+        <li><a style="color:#FFFFFF" href="{url("profile/")}">{$nombre}</a></li>
         <li class="divpropio"></li>
         <li><a style="color:#FFFFFF" href="#">Inicio</a></li>
         <li><a href="#"><span class="glyphicon glyphicon-user" aria-hidden="true"></span></a></li>
@@ -45,4 +47,38 @@
     </div><!-- /.navbar-collapse -->
   </div><!-- /.container-fluid -->
 </nav>
+          <script>
+     $(document).ready(function($) {
+     
+        // Workaround for bug in mouse item selection
+         $('#dt1').typeahead({
+                
+        
+            source: function(query, process) {
+                var data = $("#dt2").val();
+                objects = [];
+                map = {};
+
+                data= eval ("(" + data + ")");
+
+                $.each(data, function(i, object) {
+                    map[object.name] = object;
+                    objects.push(object.name);
+                });
+                process(objects);
+
+             },
+                updater: function(item) {
+                       console.log(item);
+                       console.log(map[item].id);
+                       $('#dt2').val(map[item].id);
+                       console.log($('#dt2').val());
+                       return item;
+                   }
+            
+        });
+         
+        
+    })
+</script>
       
